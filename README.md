@@ -1,7 +1,11 @@
 # Migrate
-Migrate provides a vendor-independent DSL to migrate your SQL database.
+Migrate is a DSL for the Go programming lanuage that helps to migrate your SQL database.
+Migrate is vendor independent and currently SQLite, MySQL and Postgres dialects are supported.
 
-# Example
+This is experimental software and the API will change.
+
+# Usage
+
 ```go
 type migration struct {
 	CreateT1 CreateTable `version:"1"`
